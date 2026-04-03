@@ -2,11 +2,175 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="refresh" content="0; url=privacy-policy.html">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SequenceTimer Legal</title>
+    <title>SequenceTimer Support</title>
+    <style>
+        :root {
+            color-scheme: light;
+            --bg: #f4f7fb;
+            --panel: #ffffff;
+            --text: #132033;
+            --muted: #627086;
+            --line: #d7dfeb;
+            --accent: #1b6bf2;
+            --accent-soft: #eaf2ff;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            color: var(--text);
+            background:
+                radial-gradient(circle at top left, #eef5ff 0, transparent 38%),
+                linear-gradient(180deg, #f9fbff 0%, var(--bg) 100%);
+        }
+
+        .wrap {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 56px 20px 72px;
+        }
+
+        .hero {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 28px;
+            padding: 36px;
+            box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+        }
+
+        .eyebrow {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 999px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        h1, h2 {
+            line-height: 1.15;
+            margin: 0 0 16px;
+        }
+
+        h1 {
+            font-size: clamp(2.1rem, 5vw, 3.3rem);
+        }
+
+        h2 {
+            font-size: 1.15rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 0 0 16px;
+            line-height: 1.65;
+        }
+
+        .muted {
+            color: var(--muted);
+        }
+
+        .actions,
+        .grid {
+            display: grid;
+            gap: 16px;
+            margin-top: 28px;
+        }
+
+        .actions {
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        }
+
+        .grid {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        .card {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 22px;
+            padding: 24px;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 48px;
+            padding: 12px 18px;
+            border-radius: 14px;
+            text-decoration: none;
+            font-weight: 600;
+            border: 1px solid var(--line);
+            color: var(--text);
+            background: #fff;
+        }
+
+        .button.primary {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: #fff;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 18px;
+            color: var(--muted);
+        }
+
+        footer {
+            margin-top: 28px;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+    </style>
 </head>
 <body>
-    <p>Redirecting to <a href="privacy-policy.html">SequenceTimer Privacy Policy</a>.</p>
+    <main class="wrap">
+        <section class="hero">
+            <span class="eyebrow">SequenceTimer</span>
+            <h1>Support and Privacy</h1>
+            <p class="muted">Official public support page for SequenceTimer. Use this page for App Store support details, contact information, and privacy policy access.</p>
+
+            <div class="actions">
+                <a class="button primary" href="mailto:phasekit.support@gmail.com">Contact Support</a>
+                <a class="button" href="support.html">Open Support Page</a>
+                <a class="button" href="privacy-policy.html">Open Privacy Policy</a>
+            </div>
+        </section>
+
+        <section class="grid">
+            <article class="card">
+                <h2>Support</h2>
+                <p class="muted">For help with app behavior, App Store questions, bug reports, or feature requests, contact:</p>
+                <p><a href="mailto:phasekit.support@gmail.com">phasekit.support@gmail.com</a></p>
+            </article>
+
+            <article class="card">
+                <h2>What to Include</h2>
+                <ul>
+                    <li>your device model</li>
+                    <li>your iOS version</li>
+                    <li>the app version</li>
+                    <li>a short description of the issue</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h2>Privacy</h2>
+                <p class="muted">SequenceTimer works primarily on-device, does not include third-party ads, and does not track you across apps or websites.</p>
+                <p><a href="privacy-policy.html">Read the full privacy policy</a></p>
+            </article>
+        </section>
+
+        <footer>
+            SequenceTimer support contact: <a href="mailto:phasekit.support@gmail.com">phasekit.support@gmail.com</a>
+        </footer>
+    </main>
 </body>
 </html>
