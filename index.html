@@ -41,6 +41,10 @@
             box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
         }
 
+        .hero-copy {
+            max-width: 760px;
+        }
+
         .eyebrow {
             display: inline-block;
             padding: 6px 12px;
@@ -90,11 +94,48 @@
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         }
 
+        .feature-list {
+            display: grid;
+            gap: 12px;
+            margin-top: 24px;
+        }
+
+        .feature-row {
+            display: grid;
+            grid-template-columns: 18px 1fr;
+            gap: 12px;
+            align-items: start;
+            color: var(--text);
+        }
+
+        .feature-dot {
+            width: 18px;
+            height: 18px;
+            border-radius: 999px;
+            background: var(--accent-soft);
+            border: 1px solid rgba(27, 107, 242, 0.16);
+            position: relative;
+            top: 4px;
+        }
+
         .card {
             background: var(--panel);
             border: 1px solid var(--line);
             border-radius: 22px;
             padding: 24px;
+        }
+
+        .legal-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 16px;
+        }
+
+        .legal-links a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
         }
 
         .button {
@@ -123,6 +164,12 @@
             color: var(--muted);
         }
 
+        .micro-note {
+            margin-top: 18px;
+            font-size: 0.95rem;
+            color: var(--muted);
+        }
+
         footer {
             margin-top: 28px;
             color: var(--muted);
@@ -133,9 +180,26 @@
 <body>
     <main class="wrap">
         <section class="hero">
-            <span class="eyebrow">SequenceTimer</span>
-            <h1>Support and Privacy</h1>
-            <p class="muted">Official public support page for SequenceTimer. Use this page for App Store support details, contact information, and privacy policy access.</p>
+            <div class="hero-copy">
+                <span class="eyebrow">SequenceTimer</span>
+                <h1>Build interval routines that stay clear when it matters.</h1>
+                <p class="muted">SequenceTimer is built for workouts, breathing sessions, study blocks, mobility routines, and any repeatable flow that benefits from structured timing. Create custom sequences, group steps, save routines, and start exactly where you want.</p>
+
+                <div class="feature-list">
+                    <div class="feature-row">
+                        <span class="feature-dot"></span>
+                        <div>Custom timer sequences for fitness, focus, breathing, and daily routines</div>
+                    </div>
+                    <div class="feature-row">
+                        <span class="feature-dot"></span>
+                        <div>Grouped timers and saved routines for more complex repeatable flows</div>
+                    </div>
+                    <div class="feature-row">
+                        <span class="feature-dot"></span>
+                        <div>Designed for quick setup, clear playback, and low-friction routine management</div>
+                    </div>
+                </div>
+            </div>
 
             <div class="actions">
                 <a class="button primary" href="mailto:phasekit.support@gmail.com">Contact Support</a>
@@ -143,30 +207,35 @@
                 <a class="button" href="privacy-policy.html">Open Privacy Policy</a>
                 <a class="button" href="terms.html">Open Terms of Use</a>
             </div>
+
+            <p class="micro-note">Privacy-forward by design: SequenceTimer works primarily on-device, does not include third-party ads, and does not track you across apps or websites.</p>
         </section>
 
         <section class="grid">
             <article class="card">
-                <h2>About the App</h2>
-                <p class="muted">SequenceTimer is an interval and routine timer for custom sequences, grouped steps, saved routines, and focused playback. It is designed for workouts, breathing exercises, study sessions, and repeatable daily routines.</p>
+                <h2>Who It Is For</h2>
+                <p class="muted">SequenceTimer is designed for people who want a flexible timer they can reuse across workouts, breathwork, mobility sessions, study blocks, and structured daily habits.</p>
+            </article>
+
+            <article class="card">
+                <h2>What It Does Best</h2>
+                <p class="muted">The app focuses on customizable routines, grouped timer flows, saved presets, and a running experience that stays readable and intentional while your sequence is active.</p>
             </article>
 
             <article class="card">
                 <h2>Support</h2>
-                <p class="muted">For help with app behavior, App Store questions, bug reports, or feature requests, contact:</p>
+                <p class="muted">For help with app behavior, bug reports, feature requests, or App Store questions, contact:</p>
                 <p><a href="mailto:phasekit.support@gmail.com">phasekit.support@gmail.com</a></p>
             </article>
 
             <article class="card">
-                <h2>Privacy</h2>
-                <p class="muted">SequenceTimer works primarily on-device, does not include third-party ads, and does not track you across apps or websites.</p>
-                <p><a href="privacy-policy.html">Read the full privacy policy</a></p>
-            </article>
-
-            <article class="card">
-                <h2>Terms of Use</h2>
-                <p class="muted">Read the app's license, acceptable use terms, warranty disclaimer, limitation of liability, and legal notices.</p>
-                <p><a href="terms.html">Open Terms of Use</a></p>
+                <h2>Legal and Privacy</h2>
+                <p class="muted">Read the public support information, privacy policy, and terms of use from one place.</p>
+                <div class="legal-links">
+                    <a href="support.html">Support</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Use</a>
+                </div>
             </article>
 
             <article class="card">
