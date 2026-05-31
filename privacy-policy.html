@@ -3,99 +3,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SequenceTimer Privacy Policy</title>
-    <style>
-        :root {
-            color-scheme: light;
-            --bg: #f5f7fb;
-            --card: #ffffff;
-            --text: #142033;
-            --muted: #5d6b82;
-            --line: #d7dfeb;
-            --accent: #1c6df2;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 100%);
-            color: var(--text);
-            line-height: 1.6;
-        }
-
-        .wrap {
-            max-width: 860px;
-            margin: 0 auto;
-            padding: 48px 20px 72px;
-        }
-
-        .card {
-            background: var(--card);
-            border: 1px solid var(--line);
-            border-radius: 24px;
-            padding: 32px;
-            box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
-        }
-
-        h1, h2, h3 {
-            line-height: 1.2;
-            margin: 0 0 16px;
-        }
-
-        h1 {
-            font-size: clamp(2rem, 4vw, 2.7rem);
-        }
-
-        h2 {
-            font-size: 1.3rem;
-            margin-top: 32px;
-            padding-top: 24px;
-            border-top: 1px solid var(--line);
-        }
-
-        h3 {
-            font-size: 1.05rem;
-            margin-top: 24px;
-        }
-
-        p, ul {
-            margin: 0 0 16px;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        .meta {
-            color: var(--muted);
-            margin-bottom: 24px;
-        }
-
-        .secondary-link {
-            display: inline-block;
-            margin-bottom: 24px;
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        a {
-            color: var(--accent);
-        }
-    </style>
+    <meta name="description" content="PhaseKit privacy policy.">
+    <title>PhaseKit Privacy Policy</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main class="wrap">
+    <main class="wrap narrow">
         <article class="card">
-            <h1>Privacy Policy for SequenceTimer</h1>
-            <p class="meta">Effective date: 2026-04-03</p>
+            <h1>Privacy Policy for PhaseKit</h1>
+            <p class="meta">Effective date: 2026-05-31</p>
             <a class="secondary-link" href="index.html">Back to main page</a>
 
-            <p>SequenceTimer ("the App") is developed and published by Dominik Schmitt ("we", "us", or "our").</p>
+            <p>PhaseKit ("the App") is developed and published by Dominik Schmitt ("we", "us", or "our").</p>
             <p>This Privacy Policy explains what data the App processes, how that data is used, and what choices you have.</p>
 
             <h2>Summary</h2>
@@ -107,10 +26,11 @@
                 <li>We do not require you to create an account.</li>
                 <li>Most data stays on your device.</li>
                 <li>If iCloud is enabled on your device, certain app settings and saved routines may sync through Apple's iCloud services.</li>
+                <li>The App may offer an optional one-time in-app purchase to support development and unlock cosmetic color customization. Payments are processed by Apple.</li>
             </ul>
 
             <h2>Data We Process</h2>
-            <p>SequenceTimer is designed to work primarily on-device. The App may process the following categories of data:</p>
+            <p>PhaseKit is designed to work primarily on-device. The App may process the following categories of data:</p>
 
             <h3>1. Data you create in the App</h3>
             <p>This may include:</p>
@@ -120,149 +40,87 @@
                 <li>timer durations and sequence configuration</li>
                 <li>app settings such as language, sound options, screen-awake preference, Live Activities preference, and theme color</li>
                 <li>the current active timer state needed to restore your session</li>
+                <li>whether the optional supporter unlock is active on your device</li>
+                <li>local support reminder counters, such as completed timer sessions, use days, and when a support reminder was last shown</li>
             </ul>
             <p>Purpose:</p>
             <ul>
                 <li>to provide the App's core functionality</li>
                 <li>to save your routines and settings</li>
                 <li>to restore your app state when you reopen the App</li>
+                <li>to keep supporter-only cosmetic settings available after purchase or restore</li>
+                <li>to limit optional support reminders so they are not shown too frequently</li>
             </ul>
 
             <h3>2. iCloud sync data</h3>
             <p>If iCloud is available and enabled for your device/account, the App may sync certain settings and saved routine data using <code>NSUbiquitousKeyValueStore</code>, an Apple-provided iCloud sync service.</p>
-            <p>This may include:</p>
-            <ul>
-                <li>saved routines</li>
-                <li>timer configuration settings</li>
-                <li>theme color</li>
-                <li>selected limits and step size</li>
-            </ul>
-            <p>Purpose:</p>
-            <ul>
-                <li>to keep your app data consistent across your Apple devices</li>
-            </ul>
+            <p>This may include saved routines, timer configuration settings, theme color, selected limits, and step size.</p>
             <p>We do not operate our own servers for this sync data. Where iCloud sync is used, the data is handled by Apple under Apple's own terms and privacy practices.</p>
 
             <h3>3. Live Activities and lock screen display data</h3>
             <p>If Live Activities are enabled, the App may display current timer information on supported Apple system surfaces, such as the Lock Screen or Dynamic Island.</p>
-            <p>This may include:</p>
-            <ul>
-                <li>current timer name</li>
-                <li>current timer progress</li>
-                <li>remaining time</li>
-                <li>routine context needed to display the active timer state</li>
-            </ul>
-            <p>Purpose:</p>
-            <ul>
-                <li>to show your active timer session in real time on supported system interfaces</li>
-            </ul>
+            <p>This may include current timer name, current timer progress, remaining time, and routine context needed to display the active timer state.</p>
             <p>This functionality uses Apple system frameworks and does not send that information to our own servers.</p>
 
             <h3>4. Audio-related processing</h3>
             <p>If you enable sounds or spoken countdowns, the App uses Apple audio system services on your device to play countdown audio and gong sounds.</p>
-            <p>Purpose:</p>
-            <ul>
-                <li>to provide audible timer feedback</li>
-            </ul>
             <p>No audio recordings are collected, stored, or transmitted by us.</p>
 
-            <h2>Data We Do Not Collect</h2>
-            <p>We do not knowingly collect or receive:</p>
+            <h3>5. Purchases and supporter unlock</h3>
+            <p>The App may offer an optional one-time in-app purchase that lets you support development and unlock cosmetic color customization. The core timer functionality remains free to use.</p>
+            <p>Purchases, refunds, billing history, and payment details are handled by Apple through the App Store. We do not receive or store your payment card details.</p>
+            <p>The App uses Apple's StoreKit services to:</p>
             <ul>
-                <li>your name</li>
-                <li>email address through the App</li>
-                <li>phone number</li>
-                <li>precise location</li>
-                <li>contacts</li>
-                <li>photos</li>
-                <li>browsing history</li>
-                <li>health data</li>
-                <li>payment information</li>
-                <li>user-generated content uploaded to our servers</li>
+                <li>load the current supporter purchase product and localized price</li>
+                <li>process or restore the optional supporter purchase</li>
+                <li>check the App Store entitlement for the supporter unlock</li>
+                <li>recognize users who previously bought the paid version of the App, so they do not need to pay again for the supporter unlock</li>
             </ul>
+            <p>For previous paid App customers, the App may read Apple-provided app transaction information such as the original app version/build. This is used only to determine whether the supporter unlock should be granted automatically.</p>
+
+            <h2>Data We Do Not Collect</h2>
+            <p>We do not knowingly collect or receive your name, email address through the App, phone number, precise location, contacts, photos, browsing history, health data, payment information, or user-generated content uploaded to our servers.</p>
             <p>We also do not use the App to profile users for advertising or behavioral marketing.</p>
 
             <h2>Tracking</h2>
-            <p>SequenceTimer does not track you across third-party apps, websites, or services.</p>
+            <p>PhaseKit does not track you across third-party apps, websites, or services.</p>
             <p>The App's privacy manifest declares that tracking is disabled and that no data types are collected for tracking purposes.</p>
 
             <h2>Third-Party Services</h2>
             <p>The App does not include third-party advertising or analytics SDKs.</p>
-            <p>The App may rely on Apple platform services, including:</p>
-            <ul>
-                <li>iCloud key-value storage</li>
-                <li>Live Activities / ActivityKit</li>
-                <li>Apple audio session services</li>
-            </ul>
-            <p>We do not sell your personal data and we do not share personal data with third parties for advertising or analytics purposes. Personal data may be processed through Apple platform services that you choose to use, and we may disclose information if required to comply with applicable law, regulation, legal process, or enforceable governmental request.</p>
+            <p>The App may rely on Apple platform services, including iCloud key-value storage, Live Activities / ActivityKit, Apple audio session services, StoreKit, and App Store payment services.</p>
             <p>These Apple services are governed by Apple's own terms, policies, and platform behavior.</p>
             <p>Apple Privacy Policy:<br><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></p>
 
             <h2>Legal Basis and Purpose of Processing</h2>
-            <p>Where applicable under privacy laws, we process data because it is necessary:</p>
-            <ul>
-                <li>to provide the functionality of the App</li>
-                <li>to store and restore your settings and routines</li>
-                <li>to sync your app data across your devices when Apple iCloud sync is available and enabled</li>
-                <li>to display timer status via Apple system features you choose to use</li>
-            </ul>
+            <p>Where applicable under privacy laws, we process data because it is necessary to provide the functionality of the App, store and restore your settings and routines, sync app data across your devices when Apple iCloud sync is available and enabled, display timer status via Apple system features you choose to use, and provide, restore, and validate optional in-app purchases handled by Apple.</p>
 
             <h2>Data Retention</h2>
-            <p>Data stored locally in the App is retained until:</p>
-            <ul>
-                <li>you change or delete it in the App</li>
-                <li>you delete the App from your device</li>
-                <li>your device or system settings remove the stored app data</li>
-            </ul>
+            <p>Data stored locally in the App is retained until you change or delete it in the App, delete the App from your device, or your device or system settings remove the stored app data.</p>
             <p>Data synced through iCloud is retained according to Apple's iCloud storage behavior and your Apple account/device settings, unless you remove that data in the App or disable the relevant Apple sync features.</p>
 
             <h2>Security</h2>
-            <p>We use reasonable measures appropriate to the nature of the App to help protect information processed by SequenceTimer. Most app data remains on your device, and where Apple platform services such as iCloud are used, data is handled through Apple's systems and protections. However, no method of electronic storage, transmission, or processing can be guaranteed to be completely secure.</p>
+            <p>We use reasonable measures appropriate to the nature of the App to help protect information processed by PhaseKit. Most app data remains on your device, and where Apple platform services such as iCloud and StoreKit are used, data is handled through Apple's systems and protections. However, no method of electronic storage, transmission, or processing can be guaranteed to be completely secure.</p>
 
             <h2>Your Choices</h2>
-            <p>You can:</p>
-            <ul>
-                <li>delete saved routines in the App</li>
-                <li>update or reload routines in the App</li>
-                <li>change or clear app settings in the App</li>
-                <li>disable Live Activities in the App settings</li>
-                <li>disable iCloud features at the Apple account/device level</li>
-                <li>delete the App to remove local app data from your device</li>
-            </ul>
+            <p>You can delete saved routines, update or reload routines, change app settings, disable Live Activities in the App settings, restore purchases in the App settings, disable iCloud features at the Apple account/device level, or delete the App to remove local app data from your device.</p>
 
             <h2>Your Rights</h2>
             <p>Depending on where you live, you may have rights under applicable privacy laws, including the right to request access to, correction of, deletion of, or restriction of processing of your personal data, and where applicable, the right to object to certain processing or request data portability.</p>
-            <p>If you would like to make a privacy-related request, contact us at <a href="mailto:phasekit.support@gmail.com">phasekit.support@gmail.com</a>. We will review and respond in accordance with applicable law. Because SequenceTimer primarily stores information on your device and uses Apple platform services, some requests may need to be fulfilled by deleting data within the App, deleting the App, or managing Apple account and iCloud settings directly.</p>
+            <p>If you would like to make a privacy-related request, contact us at <a href="mailto:phasekit.support@gmail.com">phasekit.support@gmail.com</a>. Because PhaseKit primarily stores information on your device and uses Apple platform services, some requests may need to be fulfilled by deleting data within the App, deleting the App, or managing Apple account and iCloud settings directly.</p>
 
             <h2>Children's Privacy</h2>
-            <p>SequenceTimer is not directed to children under 13, and we do not knowingly collect personal information from children through the App.</p>
+            <p>PhaseKit is not directed to children under 13, and we do not knowingly collect personal information from children through the App.</p>
 
             <h2>International Users</h2>
-            <p>If you use the App outside the country where the developer is based, information processed by the App may be stored on your device and may also be processed through Apple platform services in countries outside your own, depending on Apple's infrastructure and your Apple account configuration. Those countries may have data protection laws that differ from those in your place of residence.</p>
-            <p>Where Apple platform services are involved, data handling is also subject to Apple's own terms, policies, and technical infrastructure.</p>
+            <p>If you use the App outside the country where the developer is based, information processed by the App may be stored on your device and may also be processed through Apple platform services in countries outside your own, depending on Apple's infrastructure and your Apple account configuration.</p>
 
             <h2>Changes to This Privacy Policy</h2>
             <p>We may update this Privacy Policy from time to time. If we make material changes, we will update the effective date at the top of this page.</p>
 
-            <h2>Data Breach Response</h2>
-            <p>If we become aware of a personal data breach affecting information under our control, we will take steps we consider appropriate under the circumstances and will provide any notifications required by applicable law.</p>
-
-            <h2>Terms of Use</h2>
-            <p>For the App's license terms, acceptable use, warranty disclaimer, limitation of liability, and additional legal notices, read the <a href="terms.html">Terms of Use</a>.</p>
-
-            <h2>Disclaimer</h2>
-            <p>SequenceTimer is provided as a general-purpose timer and routine app. While we aim to keep the app reliable and accurate, we do not guarantee uninterrupted operation or the absence of bugs or errors.</p>
-            <p>SequenceTimer is not intended for emergency, medical, safety-critical, or mission-critical use. Use of the app is at your own discretion.</p>
-
-            <h2>Limitation of Liability</h2>
-            <p>To the extent permitted by applicable law, we are not liable for indirect, incidental, special, consequential, or exemplary damages arising from the use of, or inability to use, the app.</p>
-
             <h2>Contact</h2>
             <p>If you have questions about this Privacy Policy or the App's privacy practices, you can contact:</p>
-            <p>
-                Dominik Schmitt<br>
-                Email: <a href="mailto:phasekit.support@gmail.com">phasekit.support@gmail.com</a>
-            </p>
+            <p>Dominik Schmitt<br>Email: <a href="mailto:phasekit.support@gmail.com">phasekit.support@gmail.com</a></p>
         </article>
     </main>
 </body>

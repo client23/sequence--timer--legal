@@ -3,216 +3,29 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SequenceTimer Support</title>
-    <style>
-        :root {
-            color-scheme: light;
-            --bg: #f4f7fb;
-            --panel: #ffffff;
-            --text: #132033;
-            --muted: #627086;
-            --line: #d7dfeb;
-            --accent: #1b6bf2;
-            --accent-soft: #eaf2ff;
-        }
-
-        * { box-sizing: border-box; }
-
-        body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            color: var(--text);
-            background:
-                radial-gradient(circle at top left, #eef5ff 0, transparent 38%),
-                linear-gradient(180deg, #f9fbff 0%, var(--bg) 100%);
-        }
-
-        .wrap {
-            max-width: 980px;
-            margin: 0 auto;
-            padding: 56px 20px 72px;
-        }
-
-        .hero {
-            background: var(--panel);
-            border: 1px solid var(--line);
-            border-radius: 28px;
-            padding: 36px;
-            box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
-        }
-
-        .hero-copy {
-            max-width: 760px;
-        }
-
-        .eyebrow {
-            display: inline-block;
-            padding: 6px 12px;
-            border-radius: 999px;
-            background: var(--accent-soft);
-            color: var(--accent);
-            font-size: 0.85rem;
-            font-weight: 600;
-            margin-bottom: 16px;
-        }
-
-        h1, h2 {
-            line-height: 1.15;
-            margin: 0 0 16px;
-        }
-
-        h1 {
-            font-size: clamp(2.1rem, 5vw, 3.3rem);
-        }
-
-        h2 {
-            font-size: 1.15rem;
-            margin-bottom: 10px;
-        }
-
-        p {
-            margin: 0 0 16px;
-            line-height: 1.65;
-        }
-
-        .muted {
-            color: var(--muted);
-        }
-
-        .actions,
-        .grid {
-            display: grid;
-            gap: 16px;
-            margin-top: 28px;
-        }
-
-        .actions {
-            gap: 18px;
-        }
-
-        .primary-action {
-            display: flex;
-            justify-content: center;
-        }
-
-        .primary-action .button {
-            min-width: min(100%, 320px);
-        }
-
-        .secondary-actions {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 16px;
-        }
-
-        .grid {
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        }
-
-        .feature-list {
-            display: grid;
-            gap: 12px;
-            margin-top: 24px;
-        }
-
-        .feature-row {
-            display: grid;
-            grid-template-columns: 18px 1fr;
-            gap: 12px;
-            align-items: start;
-            color: var(--text);
-        }
-
-        .feature-dot {
-            width: 18px;
-            height: 18px;
-            border-radius: 999px;
-            background: var(--accent-soft);
-            border: 1px solid rgba(27, 107, 242, 0.16);
-            position: relative;
-            top: 4px;
-        }
-
-        .card {
-            background: var(--panel);
-            border: 1px solid var(--line);
-            border-radius: 22px;
-            padding: 24px;
-        }
-
-        .legal-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 14px;
-            margin-top: 16px;
-        }
-
-        .legal-links a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 48px;
-            padding: 12px 18px;
-            border-radius: 14px;
-            text-decoration: none;
-            font-weight: 600;
-            border: 1px solid var(--line);
-            color: var(--text);
-            background: #fff;
-        }
-
-        .button.primary {
-            background: var(--accent);
-            border-color: var(--accent);
-            color: #fff;
-        }
-
-        ul {
-            margin: 0;
-            padding-left: 18px;
-            color: var(--muted);
-        }
-
-        .micro-note {
-            margin-top: 18px;
-            font-size: 0.95rem;
-            color: var(--muted);
-        }
-
-        footer {
-            margin-top: 28px;
-            color: var(--muted);
-            font-size: 0.95rem;
-        }
-    </style>
+    <meta name="description" content="PhaseKit support, privacy policy, terms of use, and App Store help.">
+    <title>PhaseKit Support</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <main class="wrap">
         <section class="hero">
-            <div class="hero-copy">
-                <span class="eyebrow">SequenceTimer</span>
-                <h1>Build interval routines that stay clear when it matters.</h1>
-                <p class="muted">SequenceTimer is built for workouts, breathing sessions, study blocks, mobility routines, and any repeatable flow that benefits from structured timing. Create custom sequences, group steps, save routines, and start exactly where you want.</p>
+            <span class="eyebrow">PhaseKit</span>
+            <h1>Flexible sequence timers for routines that need clear structure.</h1>
+            <p class="muted">PhaseKit helps you build interval routines for workouts, breathwork, mobility, study blocks, and repeatable daily flows. Create custom sequences, group steps, save routines, and start from the timer that matters now.</p>
 
-                <div class="feature-list">
-                    <div class="feature-row">
-                        <span class="feature-dot"></span>
-                        <div>Custom timer sequences for fitness, focus, breathing, and daily routines</div>
-                    </div>
-                    <div class="feature-row">
-                        <span class="feature-dot"></span>
-                        <div>Grouped timers and saved routines for more complex repeatable flows</div>
-                    </div>
-                    <div class="feature-row">
-                        <span class="feature-dot"></span>
-                        <div>Designed for quick setup, clear playback, and low-friction routine management</div>
-                    </div>
+            <div class="feature-list">
+                <div class="feature-row">
+                    <span class="feature-dot"></span>
+                    <div>Core timer building, playback, grouping, and saved routines are free to use.</div>
+                </div>
+                <div class="feature-row">
+                    <span class="feature-dot"></span>
+                    <div>An optional one-time Support Developer purchase unlocks cosmetic app color customization.</div>
+                </div>
+                <div class="feature-row">
+                    <span class="feature-dot"></span>
+                    <div>Customers who bought the paid version before the free transition do not need to pay again for the supporter unlock.</div>
                 </div>
             </div>
 
@@ -221,50 +34,45 @@
                     <a class="button primary" href="mailto:phasekit.support@gmail.com">Contact Support</a>
                 </div>
                 <div class="secondary-actions">
-                    <a class="button" href="support.html">Open Support Page</a>
-                    <a class="button" href="privacy-policy.html">Open Privacy Policy</a>
-                    <a class="button" href="terms.html">Open Terms of Use</a>
+                    <a class="button" href="support.html">Support</a>
+                    <a class="button" href="privacy-policy.html">Privacy Policy</a>
+                    <a class="button" href="terms.html">Terms of Use</a>
                 </div>
             </div>
 
-            <p class="micro-note">Privacy-forward by design: SequenceTimer works primarily on-device, does not include third-party ads, and does not track you across apps or websites.</p>
+            <p class="note">Privacy-forward by design: PhaseKit works primarily on-device, does not include third-party ads or analytics SDKs, and does not track you across apps or websites.</p>
         </section>
 
         <section class="grid">
             <article class="card">
-                <h2>Who It Is For</h2>
-                <p class="muted">SequenceTimer is designed for people who want a flexible timer they can reuse across workouts, breathwork, mobility sessions, study blocks, and structured daily habits.</p>
+                <h2>What PhaseKit Does</h2>
+                <p class="muted">PhaseKit focuses on customizable routines, grouped timer flows, saved presets, and a running experience that stays readable while your sequence is active.</p>
             </article>
 
             <article class="card">
-                <h2>What It Does Best</h2>
-                <p class="muted">The app focuses on customizable routines, grouped timer flows, saved presets, and a running experience that stays readable and intentional while your sequence is active.</p>
+                <h2>Free Core Features</h2>
+                <p class="muted">Everything needed to build, save, and run routines remains available without payment.</p>
             </article>
 
             <article class="card">
-                <h2>Support</h2>
-                <p class="muted">For help with app behavior, bug reports, feature requests, or App Store questions, contact:</p>
-                <p><a href="mailto:phasekit.support@gmail.com">phasekit.support@gmail.com</a></p>
+                <h2>Optional Support</h2>
+                <p class="muted">The one-time Support Developer purchase is not a subscription. It unlocks color customization and helps keep the app maintained.</p>
             </article>
 
             <article class="card">
-                <h2>Legal and Privacy</h2>
-                <p class="muted">Read the public support information, privacy policy, and terms of use from one place.</p>
-                <div class="legal-links">
-                    <a href="support.html">Support</a>
-                    <a href="privacy-policy.html">Privacy Policy</a>
+                <h2>Help and Legal</h2>
+                <p class="muted">Use these pages for App Store support, purchase restore guidance, privacy details, and terms.</p>
+                <p>
+                    <a href="support.html">Support</a><br>
+                    <a href="privacy-policy.html">Privacy Policy</a><br>
                     <a href="terms.html">Terms of Use</a>
-                </div>
-            </article>
-
-            <article class="card">
-                <h2>Disclaimer</h2>
-                <p class="muted">SequenceTimer is provided as a general-purpose timer and routine app. It is not intended for emergency, medical, safety-critical, or mission-critical use.</p>
+                </p>
             </article>
         </section>
 
         <footer>
-            SequenceTimer support contact: <a href="mailto:phasekit.support@gmail.com">phasekit.support@gmail.com</a>
+            PhaseKit support contact: <a href="mailto:phasekit.support@gmail.com">phasekit.support@gmail.com</a><br>
+            Last updated: 2026-05-31
         </footer>
     </main>
 </body>
